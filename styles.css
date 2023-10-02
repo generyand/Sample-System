@@ -89,7 +89,12 @@ body {
   /* outline: 1px solid green; */
 }
 
-input {
+.edit-container .primary-heading {
+  border-radius: 1rem 1rem 0 0;
+}
+
+input,
+#update-btn {
   border-radius: 0.5rem;
   padding: 0.625rem;
   border: none;
@@ -102,6 +107,12 @@ input[type="text"] {
 
 input[type="submit"] {
   background: var(--clr-blue);
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+#update-btn {
+  background: var(--clr-blue) !important;
   color: var(--clr-white);
   cursor: pointer;
 }
@@ -166,6 +177,11 @@ button[name="delete"] {
 button[name="edit"]:hover,
 button[name="delete"]:hover {
   text-decoration: underline;
+}
+
+.edit-container {
+  width: var(--container-width);
+  margin-top: 8rem;
 }
 
 /*** UTILITY CLASS ***/
